@@ -1,0 +1,347 @@
+/* Global */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media all and (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Body */
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+}
+
+/* Margin */
+
+blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, input, ol, p, pre, textarea, ul {
+  margin: 0;
+}
+
+dd:not(:last-child), h1:not(:last-child), h2:not(:last-child), h3:not(:last-child), h4:not(:last-child), h5:not(:last-child), h6:not(:last-child), legend:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+:not(ol, ul) > ol:not(:last-child), :not(ol, ul) > ul:not(:last-child), address:not(:last-child), blockquote:not(:last-child), dl:not(:last-child), figure:not(:last-child), p:not(:last-child), pre:not(:last-child), table:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Horizontal Rule */
+
+hr {
+  background-color: currentcolor;
+  border: none;
+  color: inherit;
+  margin: 1rem 0;
+}
+
+hr:not([size]) {
+  height: 0.125rem;
+}
+
+/* Heading */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Text Formatting */
+
+b, strong {
+  font-weight: bolder;
+}
+
+mark {
+  background-color: #fe8;
+  padding: 0.125em 0.25em;
+}
+
+small {
+  font-size: 0.875em;
+}
+
+sub, sup {
+  font-size: 0.75em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Abbreviation */
+
+abbr[title] {
+  cursor: help;
+  text-decoration: underline dotted;
+  text-decoration-skip-ink: none;
+}
+
+/* Blockquote */
+
+blockquote {
+  font-size: 1.25rem;
+}
+
+/* Address */
+
+address {
+  font-style: normal;
+}
+
+/* Summary */
+
+summary {
+  cursor: pointer;
+  display: list-item;
+}
+
+/* List */
+
+dt {
+  font-weight: bold;
+}
+
+ol, ul {
+  padding-left: 2rem;
+}
+
+/* Code */
+
+a > code {
+  color: inherit;
+}
+
+code, kbd, pre, samp {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 1em;
+}
+
+code {
+  color: #f00;
+  font-size: 0.875em;
+  word-wrap: break-word;
+}
+
+kbd {
+  background-color: #222;
+  border-radius: 0.25em;
+  color: #fff;
+  font-size: 0.875em;
+  padding: 0.125em 0.375em;
+}
+
+kbd kbd {
+  font-size: inherit;
+  padding: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+pre code {
+  color: inherit;
+  font-size: inherit;
+  word-wrap: normal;
+}
+
+/* Image */
+
+img, svg {
+  vertical-align: middle;
+}
+
+/* Table */
+
+caption {
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+tbody, tfoot, thead, td, th, tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+th {
+  text-align: inherit;
+}
+
+/* Inline Frame */
+
+iframe {
+  border: none;
+}
+
+/* Form */
+
+[role="button"] {
+  cursor: pointer;
+}
+
+[type="search"] {
+  appearance: textfield;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  appearance: button;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+fieldset {
+  border: none;
+  min-width: 0;
+  padding: 0;
+}
+
+label, output {
+  display: inline-block;
+}
+
+legend {
+  font-size: calc(1.275rem + 0.3vw);
+  font-weight: bold;
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  min-height: 1.875em;
+  resize: vertical;
+}
+
+@media (min-width: 1200px) {
+  legend {
+    font-size: 1.5rem;
+  }
+}
+
+/* Browser Properties */
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-year-field {
+  padding: 0;
+}
+
+::-webkit-file-upload-button {
+  appearance: button;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+::-webkit-search-decoration {
+  appearance: none;
+}
+
+/* Hidden */
+
+[hidden] {
+  display: none !important;
+}

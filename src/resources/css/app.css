@@ -1,0 +1,199 @@
+:root {
+  --primary-color: #9c27b0;
+  --primary-color-700: #7b1fa2;
+  --white-color: #fff;
+  --container-width: 992px;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+}
+
+#app {
+  background: url("../img/background.jpg") #121212 no-repeat center center/cover;
+  box-shadow: inset 0 0 0 100vw rgb(74 20 140 / 25%);
+  min-height: 100vh;
+  width: 100%;
+}
+
+#app button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: 300ms;
+}
+
+#app button:hover, #app button:focus {
+  background: var(--primary-color-700);
+  outline: none;
+  transform: scale(1.05);
+}
+
+#app input {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  transition: 300ms;
+}
+
+#app input:focus {
+  box-shadow: 0 0 0 0.25rem var(--primary-color-700);
+}
+
+#app input:hover, #app input:focus {
+  outline: none;
+}
+
+#app > .container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--container-width);
+  min-height: inherit;
+  padding: 2rem 1rem;
+}
+
+#app .title {
+  text-align: center;
+}
+
+#app .title h1 {
+  color: var(--primary-color);
+  font-family: "Finger Paint", cursive;
+  font-size: 4.5rem;
+  font-weight: normal;
+}
+
+#app .title p {
+  color: var(--white-color);
+  font-size: 1.25rem;
+}
+
+#app .auth {
+  width: 100%;
+}
+
+#app .auth input {
+  background: rgb(255 255 255 / 75%);
+  display: block;
+  margin: 0 auto 1rem;
+  width: min(30rem, 100%);
+}
+
+#app .auth button {
+  display: block;
+  margin: 0 auto;
+}
+
+#app .menu {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: min(45rem, 100%);
+}
+
+#app .menu button {
+  background: rgb(255 255 255 / 75%);
+  color: var(--primary-color);
+  flex: 1;
+  padding: 2rem;
+}
+
+#app .menu button:hover, #app .menu button:focus {
+  box-shadow: 0 0 0 0.25rem var(--primary-color-700);
+}
+
+#app .menu button img {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 10rem;
+}
+
+#app .match {
+  width: min(50rem, 100%);
+}
+
+#app .match .status {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#app .match .status .panel {
+  background: rgb(255 255 255 / 75%);
+  border-radius: 0.5rem;
+  flex: 1;
+  padding: 2rem;
+}
+
+#app .match .status .panel .name {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+#app .match .status .panel .stat {
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+#app .match .status .panel ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+#app .match .status .panel ul li {
+  font-size: 1.125rem;
+}
+
+#app .match .moves {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+#app .match .moves button {
+  padding: 2rem;
+}
+
+#app .match .moves button img {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 4rem;
+}
+
+#app .footer .dev {
+  color: var(--white-color);
+  font-size: 1.125rem;
+}
+
+@media all and (max-width: 540px) {
+  #app .title h1 {
+    font-size: 3.5rem;
+  }
+
+  #app .title p {
+    font-size: 1.125rem;
+  }
+
+  #app .menu {
+    padding: 0 2rem;
+  }
+}

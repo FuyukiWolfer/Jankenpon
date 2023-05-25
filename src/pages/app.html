@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="robots" content="none">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Title -->
+  <title>Jankenpon</title>
+  <link rel="icon" href="favicon.ico">
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Oswald:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/reboot.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <!-- App -->
+  <main id="app">
+    <div class="container">
+      <div class="title">
+        <h1>Jankenpon</h1>
+        <p>Play now <strong>Rock Paper Scissors</strong></p>
+      </div>
+      <div class="auth" data-item="authPage" hidden>
+        <input placeholder="How do you want to be called?" type="text" data-item="usernameInput">
+        <button type="button" data-item="startButton">Start Game</button>
+      </div>
+      <div class="menu" data-item="menuPage" hidden>
+        <button type="button" data-item="vsComputerButton">
+          <img src="img/vs-computer.png" alt="Computer Icon">
+          <span>VS Computer</span>
+        </button>
+        <button type="button">
+          <img src="img/create-session.png" alt="Fight Icon">
+          <span>Create Session</span>
+        </button>
+        <button type="button">
+          <img src="img/join-session.png" alt="Connection Icon">
+          <span>Join Session</span>
+        </button>
+      </div>
+      <div class="match" data-item="matchPage" hidden>
+        <div class="status">
+          <div class="panel">
+            <span class="name" data-item="meName">Name</span>
+            <span class="stat" data-item="meStat">Waiting</span>
+            <ul>
+              <li><strong>Matches: </strong><span data-item="meMatches">0</span></li>
+              <li><strong>Wins: </strong><span data-item="meWins">0</span></li>
+              <li><strong>Ties: </strong><span data-item="meTies">0</span></li>
+              <li><strong>Defeats: </strong><span data-item="meDefeats">0</span></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <span class="name" data-item="vsName">Name</span>
+            <span class="stat" data-item="vsStat">Waiting</span>
+            <ul>
+              <li><strong>Matches: </strong><span data-item="vsMatches">0</span></li>
+              <li><strong>Wins: </strong><span data-item="vsWins">0</span></li>
+              <li><strong>Ties: </strong><span data-item="vsTies">0</span></li>
+              <li><strong>Defeats: </strong><span data-item="vsDefeats">0</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="moves">
+          <button type="button" data-item="rockMove">
+            <img src="img/rock.png" alt="Rock">
+            <span>Rock</span>
+          </button>
+          <button type="button" data-item="paperMove">
+            <img src="img/paper.png" alt="Paper">
+            <span>Paper</span>
+          </button>
+          <button type="button" data-item="scissorMove">
+            <img src="img/scissor.png" alt="Scissor">
+            <span>Scissor</span>
+          </button>
+          <button type="button" data-item="leave">
+            <img src="img/leave.png" alt="Leave">
+            <span>Leave</span>
+          </button>
+        </div>
+      </div>
+      <footer class="footer">
+        <span class="dev">Developed by <strong>Lipe A.</strong></span>
+      </footer>
+    </div>
+  </main>
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

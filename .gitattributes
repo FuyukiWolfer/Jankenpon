@@ -1,0 +1,9 @@
+# Standard Text Behavior
+
+* text=auto eol=lf
+
+# Binary Files
+
+*.ico binary
+*.jpg binary
+*.png binary
